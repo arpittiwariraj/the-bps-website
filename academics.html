@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | The Base Public School</title>
+    <meta name="description" content="Details about the academic curriculum, subjects, streams, and timetable at The Base Public School.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.2">
+    <link rel="icon" href="assets/logo/logo.jpg">
+</head>
+<body id="academics-page">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logo.jpg" alt="The Base Public School Logo">
+                    <span class="logo-text">The Base Public School</span>
+                </a>
+                <a href="contact.html" class="btn btn-contact">Contact Us</a>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="icon"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html" class="active">Academics</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-colorful">
+            <div class="container text-center">
+                <h1>Our Academics</h1>
+                <p style="max-width: 700px; margin: auto;">A commitment to academic excellence and holistic development through a modern curriculum.</p>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center; gap: 40px;">
+                    <div>
+                        <h2>Our Curriculum</h2>
+                        <p>The Base Public School is affiliated with the Council for the Indian School Certificate Examinations (CISCE), New Delhi. Our curriculum is designed to be comprehensive, balanced, and child-centered. It aims to develop the cognitive and affective domains of our students.</p>
+                        <p>We focus on an inquiry-based, hands-on learning approach that encourages critical thinking and problem-solving skills. Our academic program is rigorous yet flexible, allowing for the individual needs and talents of our students to be nurtured.</p>
+                    </div>
+                    <div>
+                        <img src="/assets/gallery/students.jpg" style="border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-colorful">
+            <div class="container">
+                <h2 class="text-center">Subjects & Streams</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Pre Primary (Nursery-UKG)</h3>
+                        <p>Maths,English, Hindi, Art & Craft, Music</p>
+                    </div>
+                    <div class="card">
+                        <h3>Primary (I-V)</h3>
+                        <p>English, Mathematics, EVS, Hindi, Computer Science, Art & Craft, Music, Physical Education.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Upper Primary (VI-VIII)</h3>
+                        <p>English, Hindi, Mathematics, Physics, Chemistry, Biology, Social Studies, Computer Science.</p>
+                    </div>
+
+                    
+
+
+                    <div class="card">
+                        <h3>Secondary (IX-X)</h3>
+                        <p>English, Mathematics, Physics, Chemistry, Biology, History & Civics, Geography ,Hindi, Physical Education.</p>
+                    </div>
+                </div>
+                <div class="grid grid-2" style="margin-top: 40px;">
+                    <div class="card">
+                        <h3>Senior Secondary - Science (XI-XII)</h3>
+                        <p><strong>Compulsory:</strong> English, Physics, Chemistry.<br><strong>Optional:</strong> Mathematics, Biology, Physical Education, Hindi.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Senior Secondary - Commerce (XI-XII)</h3>
+                        <p><strong>Compulsory:</strong> English, Accountancy, Commerce, Economics.<br><strong>Optional:</strong> Mathematics, Physical Education, Hindi</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Extra curriculum</h3>
+                        <p> Robotics, Music, Art & Craft, Taekwondo, Dance, Indoor and Outdoor Activities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="section section-colorful">
+            <div class="container">
+                <h2 class="text-center">School Calendar</h2>
+                <p class="text-center" style="max-width: 700px; margin: auto;">View our academic calendar below.</p>
+                <div style="margin-top: 40px; text-align: center;">
+                    <div id="pdf-viewer" style="border: 1px solid #ddd; border-radius: var(--border-radius); overflow: hidden; background: #f5f5f5;">
+                        <canvas id="pdf-canvas" style="display: block; margin: 0 auto; max-width: 100%;"></canvas>
+                    </div>
+                    <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center;">
+                        <button id="prev-page" class="btn" style="padding: 8px 15px;">← Previous</button>
+                        <span id="page-info" style="padding: 8px 15px; font-weight: bold;">Page 1</span>
+                        <button id="next-page" class="btn" style="padding: 8px 15px;">Next →</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+             <div class="footer-content grid grid-3">
+                <div class="footer-section">
+                    <h4>The Base Public School</h4>
+                    <p>Location: Kusmhi Bazar, Gorakhpur</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:principalbpskusmhi@gmail.com">principalbpskusmhi@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+916307819866">+91 6307819866</a></p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/916307819866" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2025</span> The Base Public School. All Rights Reserved.</p>
+                <p>Designed by <a href="http://synatse.rf.gd" target="_blank" rel="noopener noreferrer"style="color: var(--light-text-color);">Synatse</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        
+        let pdfDoc = null;
+        let currentPage = 1;
+
+        // Disable right-click context menu on entire page
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable right-click on PDF viewer specifically
+        document.getElementById('pdf-viewer').addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
+
+        // Disable drag
+        document.getElementById('pdf-viewer').addEventListener('dragstart', (e) => {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable canvas interactions
+        const canvas = document.getElementById('pdf-canvas');
+        canvas.style.userSelect = 'none';
+        canvas.style.webkitUserSelect = 'none';
+        canvas.style.msUserSelect = 'none';
+        canvas.oncontextmenu = function() { return false; };
+        canvas.ondragstart = function() { return false; };
+
+        async function loadPDF() {
+            try {
+                pdfDoc = await pdfjsLib.getDocument('assets/documents/school-calender.pdf').promise;
+                renderPage(1);
+            } catch (error) {
+                document.getElementById('pdf-canvas').style.display = 'none';
+                document.getElementById('pdf-viewer').innerHTML = '<p style="padding: 20px; color: red;">Error loading PDF. Please ensure the file exists at assets/documents/school-calender.pdf</p>';
+                console.error('PDF loading error:', error);
+            }
+        }
+
+        async function renderPage(pageNum) {
+            const page = await pdfDoc.getPage(pageNum);
+            const canvas = document.getElementById('pdf-canvas');
+            const context = canvas.getContext('2d');
+            const viewport = page.getViewport({scale: 1.5});
+            
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            
+            await page.render({canvasContext: context, viewport: viewport}).promise;
+            document.getElementById('page-info').textContent = `Page ${pageNum} of ${pdfDoc.numPages}`;
+        }
+
+        document.getElementById('prev-page').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        document.getElementById('next-page').addEventListener('click', () => {
+            if (currentPage < pdfDoc.numPages) {
+                currentPage++;
+                renderPage(currentPage);
+            }
+        });
+
+        loadPDF();
+    </script>
+
+</body>
+</html>

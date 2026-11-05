@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | The Base Public School</title>
+    <meta name="description" content="Information about the admission process, eligibility, and inquiry form for The Base Public School.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.2">
+    <link rel="icon" href="assets/logo/logo.jpg">
+</head>
+<body id="admissions-page">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logo.jpg" alt="The Base Public School Logo">
+                    <span class="logo-text">The Base Public School</span>
+                </a>
+                <a href="contact.html" class="btn btn-contact">Contact Us</a>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="icon"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-colorful">
+            <div class="container text-center">
+                <h1>Admissions</h1>
+                <p style="max-width: 700px; margin: auto;">Join our community and embark on a journey of knowledge and growth.</p>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <h2>Admission Process</h2>
+                <ol style="padding-left: 20px; max-width: 800px;">
+                    <li><strong>Inquiry:</strong> Fill out the inquiry form below. Your message will be prepared to be sent to our admissions desk via WhatsApp.</li>
+                    <li><strong>Application Form:</strong> Obtain the application form from the school office and submit it with the required documents.</li>
+                    <li><strong>Entrance Exam:</strong> An entrance exam will be conducted every Friday. The result will be declared after 3 days..</li>
+                    <li><strong>Admission Confirmation:</strong> Selected candidates will be notified, and parents will be required to complete the admission formalities.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section section-colorful">
+            <div class="container grid grid-2">
+                <div>
+                    <h3>Eligibility Criteria</h3>
+                    <ul>
+                        <li>Nursery: 3+ years as of 1st April.</li>
+                        <li>LKG:4+ years as of 1st April.</li>
+                        <li>UKG:5+ years as of 1st April.</li>
+                        <li>Class I onwards: Based on performance in the assessment.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Documents Required</h3>
+                    <ul>
+                        <li>Birth Certificate (copy)</li>
+                        <li>Transfer Certificate (original)</li>
+                        <li>Previous Year's Report Card (copy)</li>
+                        <li>Aadhaar Card of student and parents (copy)</li>
+                        <li>4 Passport-sized photographs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="text-center">Admissions Inquiry Form</h2>
+                <p class="text-center">After submitting, you will be prompted to send your inquiry via WhatsApp.</p>
+                <form id="admissions-form" novalidate>
+                    <div class="form-group">
+                        <label for="student-name">Student's Name</label>
+                        <input type="text" id="student-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent-name">Parent's Name</label>
+                        <input type="text" id="parent-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class Applying For</label>
+                        <select id="class" class="form-control" required>
+                            <option value="">-- Select Class --</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="LKG">LKG</option>
+                            <option value="UKG">UKG</option>
+                            <option value="1">Class 1</option>
+                            <option value="2">Class 2</option>
+                            <option value="3">Class 3</option>
+                            <option value="4">Class 4</option>
+                            <option value="5">Class 5</option>
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                            <option value="8">Class 8</option>
+                            <option value="9">Class 9</option>
+                            <option value="11 - Science">Class 11 - Science</option>
+                            <option value="11" - Commerce>Class 11 - Commerce</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message (Optional)</label>
+                        <textarea id="message" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content grid grid-3">
+                <div class="footer-section">
+                    <h4>The Base Public School</h4>
+                    <p>Location: Kusmhi Bazar, Gorakhpur</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:principalbpskusmhi@gmail.com">principalbpskusmhi@gmail.com </a></p>
+                    <p>Phone: <a href="tel:+916307819866">+91 6307819866</a></p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/916307819866" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2025</span> The Base Public School. All Rights Reserved.</p>
+                <p>Designed by <a href="http://synatse.rf.gd" target="_blank" rel="noopener noreferrer"style="color: var(--light-text-color);">Synatse</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const admissionsForm = document.getElementById('admissions-form');
+            
+            if (admissionsForm) {
+                admissionsForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const studentName = document.getElementById('student-name').value;
+                    const parentName = document.getElementById('parent-name').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const classApplying = document.getElementById('class').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Validate required fields
+                    if (!studentName || !parentName || !email || !phone || !classApplying) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    
+                    // Create WhatsApp message
+                    const whatsappMessage = `Hello, I would like to inquire about admissions.
+Student Name: ${studentName}
+Parent Name: ${parentName}
+Email: ${email}
+Phone: ${phone}
+Class Applying For: ${classApplying}
+${message ? `Message: ${message}` : ''}`;
+                    
+                    // Encode message for URL
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    const whatsappPhone = '916307819866'; // Your school's WhatsApp number
+                    const whatsappURL = `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+                    
+                    // Open WhatsApp
+                    window.open(whatsappURL, '_blank');
+                    
+                    // Reset form
+                    admissionsForm.reset();
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices | The Base Public School</title>
+    <meta name="description" content="Latest news, updates, and notices from The Base Public School.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.2">
+    <link rel="icon" href="assets/logo/logo.jpg">
+</head>
+
+<body id="notices-page">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logo.jpg" alt="The Base Public School Logo">
+                    <span class="logo-text">The Base Public School</span>
+                </a>
+                <a href="contact.html" class="btn btn-contact">Contact Us</a>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="icon"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="notices.html" class="active">Notices</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-colorful">
+            <div class="container text-center">
+                <h1>Notice Board</h1>
+                <p style="max-width: 700px; margin: auto;">Stay updated with the latest announcements and information.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container" style="max-width: 900px;">
+                <div class="form-group">
+                    <label for="notice-search" class="sr-only">Search Notices</label>
+                    <input type="text" id="notice-search" class="form-control" placeholder="Search for a notice...">
+                </div>
+
+                <div id="notice-list" style="margin-top: 40px;"> </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content grid grid-3">
+                <div class="footer-section">
+                    <h4>The Base Public School</h4>
+                    <p>Location: Kusmhi Bazar, Gorakhpur</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:principalbpskusmhi@gmail.com">principalbpskusmhi@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+916307819866">+91 6307819866</a></p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"
+                            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/916307819866" target="_blank"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2025</span> The Base Public School. All Rights Reserved.</p>
+                <p>Designed by <a href="http://synatse.rf.gd" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--light-text-color);">Synatse</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        // --- Load Notices from JSON ---
+        let noticeData = [];
+
+        fetch('/data/notices.json')
+            .then(response => response.json())
+            .then(data => {
+                noticeData = data;
+                renderNotices(noticeData);
+                setupSearch();
+            });
+
+        const noticeList = document.getElementById('notice-list');
+        const searchInput = document.getElementById('notice-search');
+
+        const renderNotices = (notices) => {
+            if (notices.length === 0) {
+                noticeList.innerHTML = '<p>No notices match your search.</p>';
+                return;
+            }
+            noticeList.innerHTML = notices.map(notice => `
+                <div class="notice-item">
+                    <h4>${notice.title}</h4>
+                    <p><small>Date: ${new Date(notice.date).toLocaleDateString()}</small></p>
+                    <p>${notice.content.replace(/\n/g, '<br>')}</p>
+                </div>
+            `).join('');
+        };
+
+        const setupSearch = () => {
+            searchInput.addEventListener('keyup', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filteredNotices = noticeData.filter(notice => 
+                    notice.title.toLowerCase().includes(searchTerm) ||
+                    notice.content.toLowerCase().includes(searchTerm)
+                );
+                renderNotices(filteredNotices);
+            });
+        };
+    </script>
+
+</body>
+
+</html>

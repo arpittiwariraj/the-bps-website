@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ansh Chaurasiya",
+    "year": 2025,
+    "marks": "95%",
+    "class": "X",
+    "photo": "/assets/toppers/ansh chaurasia 95.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Asna Firoz",
+    "year": 2025,
+    "marks": "89%",
+    "class": "X",
+    "photo": "https://source.unsplash.com/random/400x400/?student,female,portrait"
+  },
+  {
+    "id": 3,
+    "name": "Samar Singh",
+    "year": 2025,
+    "marks": "87%",
+    "class": "X",
+    "photo": "/assets/toppers/samar singh 87.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tripti Sharma",
+    "year": 2025,
+    "marks": "87%",
+    "class": "X",
+    "photo": "/assets/toppers/tripti sharma 81.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kavya Yadav",
+    "year": 2025,
+    "marks": "85%",
+    "class": "X",
+    "photo": "https://source.unsplash.com/random/400x400/?student,male,happy"
+  },
+  {
+    "id": 6,
+    "name": "Anshika Singh",
+    "year": 2025,
+    "marks": "85%",
+    "class": "X",
+    "photo": "/assets/toppers/anshika singh 85.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Vishal Kr Chauhan",
+    "year": 2025,
+    "marks": "85%",
+    "class": "X",
+    "photo": "/assets/toppers/vishal kr. chauhan 85.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Raj Paswan",
+    "year": 2025,
+    "marks": "84%",
+    "class": "X",
+    "photo": "/assets/toppers/raj paswan 84.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Khushi Arvind Dubey",
+    "year": 2025,
+    "marks": "82%",
+    "class": "X",
+    "photo": "https://source.unsplash.com/random/400x400/?student,male,serious"
+  },
+  {
+    "id": 10,
+    "name": "Anshika Singh",
+    "year": 2025,
+    "marks": "82%",
+    "class": "X",
+    "photo": "https://source.unsplash.com/random/400x400/?student,female,serious"
+  },
+  {
+    "id": 11,
+    "name": "Khushi Gupta",
+    "year": 2025,
+    "marks": "81%",
+    "class": "X",
+    "photo": "/assets/toppers/khushi gupta 81.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Akhilesh Gupta",
+    "year": 2025,
+    "marks": "80%",
+    "class": "X",
+    "photo": "https://source.unsplash.com/random/400x400/?student,female,serious"
+  }
+]
